@@ -1,6 +1,6 @@
 ## 偏微分赛道
 
-
+[学习计划](https://github.com/PLANCK234/-/blob/main/%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92.md)
 
 
 ### 赛题题目
