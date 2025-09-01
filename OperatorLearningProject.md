@@ -174,7 +174,7 @@ $$
 * 好处是既能保证速度，又能保证物理一致性。
 
 
-![image-3.png](attachment:image-3.png)
+![1.png](./pictures/picture1.png)
 
 
 
@@ -258,14 +258,14 @@ $$
 
 ##### 方法二：算子学习类神经网络方法
 
-![image.png](attachment:image.png)
+![2.png](./pictures/picture2.png)
 
 
 > [Lu et al., 2021] Lu Lu, Pengzhan Jin,et al.,  Learning nonlinear operators via deeponet based on the universal approximation theorem of operators. Nature machine intelligence, 3(3):218–229, 2021.
 
 > 我们着重学习运用这类方法
 
-![image-2.png](attachment:image-2.png)
+![3.png](./pictures/picture3.png)
 
 > 需要学习的有
 
@@ -442,7 +442,7 @@ $$
 
 #### 按照如下路径补充数学知识
 
-![4c0ef0b18dc804ed5b25ab2b257e7170.png](attachment:4c0ef0b18dc804ed5b25ab2b257e7170.png)
+![4.png](./pictures/picture4.png)
 
 
 \**核心内容：*\*为了理解算子学习求解PDE，需要补充泛函分析、Sobolev空间、变分法和数值PDE等背景。重点包括：度量与赋范空间、Hilbert空间投影定理，Sobolev空间 \$W^{k,p}\$ 定义及嵌入定理，PDE弱解理论（Lax-Milgram 定理等）、变分形式，以及有限差分/有限元的基本思想。
@@ -513,7 +513,7 @@ $$
 
 3. 
 
-> ![image.png](attachment:image.png)
+> ![5.png](./pictures/picture5.png)
 
 4. 论文
 
