@@ -1,0 +1,96 @@
+### 第一个月 Timeline（4 周）学习计划
+
+目标：
+
+* **第 1 个月：补齐算子学习的数理 & 深度学习理论基础**（Sobolev 空间、弱解、变分法、数值 PDE、网络逼近与泛化理论）。
+* **第 2 个月：完成一个完整的算子学习相关项目**
+
+#### **Week 1：函数空间与 Sobolev 基础**
+
+目标：理解 PDE 解所处的函数空间，掌握弱解的语言。
+
+* **学习内容：**
+
+  * 度量与赋范空间复习，Banach/Hilbert 空间的定义与基本性质。
+  * Hilbert 空间的投影定理、正交分解。
+  * Sobolev 空间 $W^{k,p}$：定义、弱导数、Poincaré 不等式。
+  * 典型例子：$H^1(\Omega)$ 空间在 Poisson 方程中的应用。
+* **资源：**
+
+  * Evans《PDE》Ch. 5 + 附录 Sobolev 基础。
+  * Brezis《Functional Analysis》相关章节。
+* **练习：**
+
+  * 证明：$H^1_0(\Omega)$ 中弱解的存在唯一性（Lax-Milgram）。
+  * 习题：Poisson 方程弱形式推导。
+
+
+#### **Week 2：变分法与数值 PDE**
+
+🎯 目标：掌握弱解与变分形式，初步了解有限元/有限差分。
+
+* **学习内容：**
+
+  * 变分法：Euler-Lagrange 方程，泛函极值问题。
+  * PDE 弱解理论（Lax-Milgram 定理，Galerkin 近似思想）。
+  * 有限差分/有限元基本思想（稳定性、收敛性）。
+* **资源：**
+
+  * 《变分法及泛函分析引论》Ch.1-2
+  * Quarteroni《Numerical PDE》Ch.1-3
+* **练习：**
+
+  * 写一个 Poisson 方程 1D 有限差分代码（Python/Matlab/Julia 均可）。
+  * 推导：波动方程/热方程的变分形式。
+
+
+#### **Week 3：神经网络逼近理论**
+
+目标：理解神经网络作为函数/算子逼近器的数学根基。
+
+* **学习内容：**
+
+  * 万能逼近定理（Cybenko 1989, Hornik 1989）。
+  * Barron 空间与高维逼近误差界。
+  * Chen & Chen (1995) 的算子逼近定理。
+  * 深度 vs 宽度理论。
+* **资源：**
+
+  * Poggio 等人 *PNAS* 综述文章
+  * Nadav Dym《Deep Learning and Approximation Theory》课程笔记
+* **练习：**
+
+  * 用 Python 实现一个浅层网络，拟合 1D 函数（比如 $\sin(x)$）。
+  * 思考：为什么要算子学习（函数到函数），而不仅仅是函数逼近。
+
+#### **Week 4：算子学习入门 + 前沿文献导读**
+
+目标：进入算子学习方法本身，了解 FNO / DeepONet 架构。
+
+* **学习内容：**
+
+  * 算子学习的定义（Kovachki et al., 2023 JMLR）。
+  * DeepONet 结构：Branch/Trunk 网络，算子逼近。
+  * FNO 思路：傅里叶域卷积，离散不变性。
+  * PCA/POD 基方法：降维视角。
+* **资源：**
+
+  * Lu et al. (Nature Mach Intell, 2021) DeepONet
+  * Li et al. (NeurIPS 2020) FNO
+  * Jha (2025) 《Practical Introduction to Neural Operators》
+* **练习：**
+
+  * 画出 DeepONet 架构图，并解释每个模块的作用。
+  * 阅读 FNO 论文中的 Burgers 方程实验，尝试理解输入输出数据格式。
+
+
+#### 补充建议
+
+* 每周保持 **数学 + 编程/实验** 的双轨学习。
+* 每周安排 2–3 次文献阅读小组讨论（互相讲解一篇论文/教材部分）。
+* 每周末总结笔记，可以用 Lean 4 或 LaTeX 形式写下来，帮助加深理解。
+* 到月底，你们应该能：
+
+  * 流利解释 Sobolev 空间、弱解、变分法。
+  * 写出简单 PDE 的数值解代码。
+  * 理解为什么神经网络能逼近算子，并能讲出 DeepONet / FNO 的核心思想。
